@@ -26,7 +26,7 @@ const ListFavs = ({userFavs, setUserFavs}: ListFavsProps) => {
   const renderFavsItems = ({item}: any) => (
     <FavItem
       item={item}
-      onPress={() => navigateDetails(item.id)}
+      onPress={() => navigateDetails({id: item.id})}
       pressActionButton={() => deleteFavs(item?.id)}
     />
   );

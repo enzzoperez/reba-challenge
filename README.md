@@ -18,5 +18,5 @@ npm i
 
 _Aclaraciones_ :
 
-- Al usar una API publica no se necesita una api_key y el archivo con las variables de entorno tambien se subio al repo por esa razon.
+- Al usar una API publica no se necesita una api_key para los endpoints y el archivo con las variables de entorno tambien se subio al repo por esa razon.
 - Se coloco un test de snapshot para el componente Button, se lo puede correr haciendo `npm run test`

@@ -7,7 +7,7 @@ import {storage} from '../../utils/storage';
 import {styles} from './styles';
 
 interface ListFavsProps {
-  userFavs: [];
+  userFavs: object[];
   setUserFavs: Function;
 }
 
@@ -36,7 +36,7 @@ const ListFavs = ({userFavs, setUserFavs}: ListFavsProps) => {
       <Text style={styles.textHeader}>Your favs</Text>
       <FlatList
         horizontal
-        keyExtractor={item => item?.id + Date.now().toString()}
+        keyExtractor={item => item?.id}
         data={userFavs}
         renderItem={renderFavsItems}
       />

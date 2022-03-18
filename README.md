@@ -13,16 +13,10 @@ cd reba-challenge
 npm i
 ```
 
-3. Correr el proyecto ya sea en de
+3. Correr el proyecto en modo desarrollo con `npm run debug:android` o para produccion `npm run prod:android`
 
-```
-npm run debug:android
 
-```
+_Aclaraciones_ :
 
-o para produccion 
-
-```
-npm run prod:android
-
-```
+- Al usar una API publica no se necesita una api_key y el archivo con las variables de entorno tambien se subio al repo por esa razon.
+- Se coloco un test de snapshot para el componente Button, se lo puede correr haciendo `npm run test`
